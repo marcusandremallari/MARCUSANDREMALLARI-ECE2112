@@ -11,15 +11,6 @@ Create a function named `rotate_word()` that accepts a non-empty string and shif
 * **Indexing (`[0]`):** Accesses the very first character of the input string.
 * **Concatenation (`+`):** Joins the remaining characters with the moved first character.
 
-# Test execution
-def rotate_word(text):
-    # Slice from index 1 to the end, then append the first character
-    return text[1:] + text[0]
-    
-print(rotate_word("python"))  # Output: ythonp
-print(rotate_word("logic"))  # Output: ogicl
-print(rotate_word("Code"))  # Output: odeC
-print(rotate_word("A"))  # Output: A
 
 ## 2. Username Builder Problem
 
@@ -41,19 +32,6 @@ The following functions and methods were used in this problem:
 
 These built-in string methods and operations were combined in order to create a single defined function that builds a valid username:
 
-# Test execution
-def make_username(first_name, last_name):
-    # Convert names to lowercase and strip out spaces
-    clean_first = first_name.lower().replace(" ", "")
-    clean_last = last_name.lower().replace(" ", "")
-
-    # Join the processed names using a period
-    return clean_first + "." + clean_last
-
-print(make_username("Ada", "Lovelace"))      # Output: ada.lovelace
-print(make_username("Alan", "Turing"))        # Output: alan.turing
-print(make_username("Ana Maria", "De Leon"))  # Output: anamaria.deleon
-
 
 ## 3. Bookend Swap Problem
 
@@ -71,18 +49,5 @@ The following functions and methods were used in this problem:
 
 These Python unpacking and list construction techniques were combined in order to create a single defined function that swaps the outer bookends of any given list:
 
-# Test execution
-def swap_bookends(items):
-    # Unpack the first element, middle sublist, and last element
-    first, *middle, last = items
-
-    # Reconstruct and return the list with first and last elements swapped
-    return [last] + middle + [first]
-
-print(swap_bookends([1, 2, 3, 4, 5, 6]))  # Output: [6, 2, 3, 4, 5, 1]
-print(
-    swap_bookends(["red", "green", "blue"])
-)  # Output: ['blue', 'green', 'red']
-print(swap_bookends([8, 3]))  # Output: [3, 8]
 
 Thank you for reading!
