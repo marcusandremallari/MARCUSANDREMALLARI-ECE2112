@@ -11,13 +11,11 @@ Create a function named `rotate_word()` that accepts a non-empty string and shif
 * **Indexing (`[0]`):** Accesses the very first character of the input string.
 * **Concatenation (`+`):** Joins the remaining characters with the moved first character.
 
-
+# Test execution
 def rotate_word(text):
     # Slice from index 1 to the end, then append the first character
     return text[1:] + text[0]
-
-
-# Test execution
+    
 print(rotate_word("python"))  # Output: ythonp
 print(rotate_word("logic"))  # Output: ogicl
 print(rotate_word("Code"))  # Output: odeC
@@ -31,19 +29,19 @@ The following functions and methods were used in this problem:
 
 * `.lower()` - A string method that converts all uppercase letters in the input string into lowercase letters.
 
-  Example: `"Ana Maria".lower()` --> `'ana maria'`
+  Example: `"Ana Maria".lower()` = `'ana maria'`
 
 * `.replace()` - A string method that replaces specified characters in a string. In this problem, it is used to strip all space characters (`" "`) by replacing them with an empty string (`""`).
 
-  Example: `"ana maria".replace(" ", "")` --> `'anamaria'`
+  Example: `"ana maria".replace(" ", "")` = `'anamaria'`
 
 * **String Concatenation (`+`)** - Joins the processed first name, a period (`"."`), and the processed last name into a single username string.
 
-  Example: `"anamaria"` + `"."` + `"deleon"` --> `'anamaria.deleon'`
+  Example: `"anamaria"` + `"."` + `"deleon"` = `'anamaria.deleon'`
 
 These built-in string methods and operations were combined in order to create a single defined function that builds a valid username:
 
-python
+# Test execution
 def make_username(first_name, last_name):
     # Convert names to lowercase and strip out spaces
     clean_first = first_name.lower().replace(" ", "")
@@ -52,8 +50,6 @@ def make_username(first_name, last_name):
     # Join the processed names using a period
     return clean_first + "." + clean_last
 
-
-# Test execution
 print(make_username("Ada", "Lovelace"))  # Output: ada.lovelace
 print(make_username("Alan", "Turing"))  # Output: alan.turing
 print(make_username("Ana Maria", "De Leon"))  # Output: anamaria.deleon
@@ -75,7 +71,7 @@ The following functions and methods were used in this problem:
 
 These Python unpacking and list construction techniques were combined in order to create a single defined function that swaps the outer bookends of any given list:
 
-python
+# Test execution
 def swap_bookends(items):
     # Unpack the first element, middle sublist, and last element
     first, *middle, last = items
@@ -83,8 +79,6 @@ def swap_bookends(items):
     # Reconstruct and return the list with first and last elements swapped
     return [last] + middle + [first]
 
-
-# Test execution
 print(swap_bookends([1, 2, 3, 4, 5, 6]))  # Output: [6, 2, 3, 4, 5, 1]
 print(
     swap_bookends(["red", "green", "blue"])
