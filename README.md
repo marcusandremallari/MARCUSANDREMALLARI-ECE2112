@@ -30,8 +30,6 @@ The following functions and methods were used in this problem:
 
   Example: `"anamaria"` + `"."` + `"deleon"` = `'anamaria.deleon'`
 
-These built-in string methods and operations were combined in order to create a single defined function that builds a valid username:
-
 
 ## 3. Bookend Swap Problem
 
@@ -46,8 +44,6 @@ The following functions and methods were used in this problem:
 * **List Concatenation (`+`)** - Operates on list data types to combine multiple sublists into a single contiguous list. Enclosing `last` and `first` inside brackets converts them into single-element lists (`[last]` and `[first]`) so they can be merged with the `middle` sublist.
 
   Example: `[6]` + `[2, 3, 4, 5]` + `[1]` --> `[6, 2, 3, 4, 5, 1]`
-
-These Python unpacking and list construction techniques were combined in order to create a single defined function that swaps the outer bookends of any given list:
 
 
 Thank you for reading!
