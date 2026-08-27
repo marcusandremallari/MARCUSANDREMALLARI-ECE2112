@@ -50,8 +50,8 @@ def make_username(first_name, last_name):
     # Join the processed names using a period
     return clean_first + "." + clean_last
 
-print(make_username("Ada", "Lovelace"))  # Output: ada.lovelace
-print(make_username("Alan", "Turing"))  # Output: alan.turing
+print(make_username("Ada", "Lovelace"))      # Output: ada.lovelace
+print(make_username("Alan", "Turing"))        # Output: alan.turing
 print(make_username("Ana Maria", "De Leon"))  # Output: anamaria.deleon
 
 
